@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RGSRadialGradientView_Example' do
+  pod 'RGSRadialGradientView', :path => '../'
+
+  target 'RGSRadialGradientView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
