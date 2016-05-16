@@ -1,0 +1,6 @@
+framework module RGSRadialGradientView {
+  umbrella header "RGSRadialGradientView-umbrella.h"
+
+  export *
+  module * { export * }
+}

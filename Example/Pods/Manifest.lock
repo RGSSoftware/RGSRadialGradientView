@@ -1,0 +1,16 @@
+PODS:
+  - RGSRadialGradientView (0.1.0)
+
+DEPENDENCIES:
+  - RGSRadialGradientView (from `../`)
+
+EXTERNAL SOURCES:
+  RGSRadialGradientView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RGSRadialGradientView: 516a95584e5a51836ae0bf7d6338ca46aad9f3de
+
+PODFILE CHECKSUM: 5d99f2d4e6862bf502bfc28269d163b36116fd0e
+
+COCOAPODS: 1.0.0

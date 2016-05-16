@@ -10,20 +10,38 @@
 
 @interface RGSViewController ()
 
+@property (strong, nonatomic) RGSRadialGradientView *argv;
+
 @end
 
 @implementation RGSViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    
+    self.argv = [[RGSRadialGradientView alloc] initWithFrame:CGRectMake(self.view.center.x - 100, 30, 200,200)];
+    
+    self.argv.interColor = [UIColor colorWithRed:0.16 green:0.50 blue:0.73 alpha:1.0];
+    self.argv.outerColor = [UIColor colorWithRed:0.91 green:0.30 blue:0.24 alpha:1.0];
+    self.argv.radius = CGRectGetWidth(self.argv.frame)/2;
+    self.argv.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:self.argv];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.backgroundRGV.outerColor = [UIColor colorWithRed:0.97 green:0.42 blue:0.11 alpha:1.0];
+    self.backgroundRGV.interColor = [UIColor colorWithRed:0.98 green:0.85 blue:0.38 alpha:1.0];
+    
+    self.backgroundRGV.radius = self.backgroundRGV.frame.size.width + self.backgroundRGV.frame.size.width/32;
+    self.backgroundRGV.gradientCenter = CGPointMake(CGRectGetMidX(self.backgroundRGV.frame), CGRectGetMidY(self.backgroundRGV.frame));
+    
+    self.argv.gradientCenter = CGPointMake(CGRectGetWidth(self.argv.frame)/2, CGRectGetHeight(self.argv.frame)/2);
 }
+
 
 @end
