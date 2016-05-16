@@ -8,10 +8,6 @@ A simple Radial Gradient View for iOS.
 
 <img src="https://github.com/RGSSoftware/RGSRadialGradientView/blob/master/screenshots/ss1.png" alt="iPhone 5" width="396" />
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Installation
 
 RGSRadialGradientView is available through [CocoaPods](http://cocoapods.org). To install
@@ -56,6 +52,9 @@ pod "RGSRadialGradientView"
 ###Todo
 As of now RGSRadialGradientView is very simplistic, but over time I hope it can grow into a first class object like : https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient.
 
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## License
 
