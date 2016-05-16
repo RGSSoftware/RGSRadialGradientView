@@ -6,6 +6,8 @@
 
 A simple Radial Gradient View for iOS.
 
+<img src="https://github.com/RGSSoftware/RGSRadialGradientView/blob/master/screenshots/ss1.png" alt="iPhone 5" width="396" />
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
